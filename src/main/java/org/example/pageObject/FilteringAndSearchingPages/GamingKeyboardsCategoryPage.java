@@ -50,8 +50,7 @@ public class GamingKeyboardsCategoryPage extends BasePage {
         JavascriptExecutor js = (JavascriptExecutor) webDriver;
         js.executeScript("arguments[0].click();", brandsExpander);
 
-        WebElement brandNameCheckbox = new WebDriverWait(webDriver, Duration.ofSeconds(6))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text() = '" + brandName + "']")));
+        WebElement brandNameCheckbox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text() = '" + brandName + "']")));
         brandNameCheckbox.click();
         return this;
     }
