@@ -1,7 +1,6 @@
 package org.example;
 
 import org.example.factory.WebDriverFactory;
-import org.example.pageObject.AddRemoveCart.ProductPage;
 import org.example.pageObject.DeliveryToFunctionality.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
